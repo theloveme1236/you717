@@ -101,6 +101,8 @@ def check_driver_open():
         print('check_driver_open: ' , ddfrs)
 def failed_success_minutes():
     global driver
+    global No_tasks
+    global NoSuchElementException
     try:
         erro_minutes=driver.find_element(By.ID, 'error-text').text
         You_have_failed  = erro_minutes.split(' success rate validation')[0]
